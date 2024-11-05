@@ -30,4 +30,5 @@ monitors:
     url: 'https://statistic.hpcesia.com/'
     method: GET
     expectStatus: 200
+    followRedirect: true
     linkable: true
