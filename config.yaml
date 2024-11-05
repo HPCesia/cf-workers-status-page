@@ -2,7 +2,7 @@ settings:
   title: '站点状态'
   url: 'https://status.hpcesia.com/' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
+  daysInHistogram: 30 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: '所有系统运行正常'
@@ -12,7 +12,7 @@ settings:
   monitorLabelNoData: '无数据'
   dayInHistogramNoData: '无数据'
   dayInHistogramOperational: '一切正常'
-  dayInHistogramNotOperational: ' 异常' # xx incident(s) recorded
+  dayInHistogramNotOperational: ' 个异常' # xx incident(s) recorded
 
 monitors:
   - id: blog-hpcesia-com # unique identifier
@@ -27,7 +27,7 @@ monitors:
   - id: statistic-hpcesia-com
     name: statistic.hpcesia.com
     description: '站点访问统计'
-    url: 'https://statistic.hpcesia.com/'
+    url: 'https://statistic.hpcesia.com/login'
     method: GET
     expectStatus: 200
     followRedirect: true
