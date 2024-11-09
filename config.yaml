@@ -32,3 +32,12 @@ monitors:
     expectStatus: 200
     followRedirect: true
     linkable: true
+
+  - id: mini-cover-hpcesia-com
+    name: mini-cover.hpcesia.com
+    description: '博客封面制作'
+    url: 'https://mini-cover.hpcesia.com/'
+    method: GET
+    expectStatus: 200
+    followRedirect: true
+    linkable: true
